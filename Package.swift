@@ -17,6 +17,7 @@ let package = Package(
     targets: [
         .target(
             name: "MockMarks+XCUI",
+            dependencies: ["MockMarks"],
             plugins: [.plugin(name: "SwiftLintPlugin", package: "SwiftLint")]
         )
     ]

@@ -1,5 +1,5 @@
 import XCTest
-@testable import MockMarks
+import MockMarks
 
 open class MockMarksUITestCase: XCTestCase {
 
@@ -29,5 +29,24 @@ public extension MockMarksUITestCase {
       .split(separator: " ")
       .last!
       .replacingOccurrences(of: "]", with: "")
+  }
+}
+
+private extension URL {
+
+  init(safePath path: String) {
+    if #available(iOS 16, *) {
+      self.init(filePath: path)
+    } else {
+      self.init(fileURLWithPath: path)
+    }
+  }
+
+  mutating func safeAppend(path: String) {
+    if #available(iOS 16, *) {
+      self.append(path: path)
+    } else {
+      self.appendPathComponent(path)
+    }
   }
 }
