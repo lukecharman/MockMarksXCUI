@@ -12,6 +12,7 @@ let package = Package(
     ],
     dependencies: [
       .package(url: "https://github.com/Realm/SwiftLint", branch: "main"),
+      .package(url: "https://github.com/lukecharman/MockMarks", branch: "main")
     ],
     targets: [
         .target(
