@@ -3,11 +3,11 @@
 import PackageDescription
 
 let package = Package(
-    name: "MockMarks+XCUI",
+    name: "MockMarksXCUI",
     products: [
         .library(
-            name: "MockMarks+XCUI",
-            targets: ["MockMarks+XCUI"]
+            name: "MockMarksXCUI",
+            targets: ["MockMarksXCUI"]
         ),
     ],
     dependencies: [
@@ -15,7 +15,7 @@ let package = Package(
     ],
     targets: [
         .target(
-            name: "MockMarks+XCUI",
+            name: "MockMarksXCUI",
             dependencies: ["MockMarks"]
         )
     ]

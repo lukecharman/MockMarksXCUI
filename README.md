@@ -1,4 +1,4 @@
-# MockMarks+XCUI
+# MockMarksXCUI
 
 An `XCTestCase` subclass named `MockMarksUITestCase` from which all MockMarks tests should inherit.
 
@@ -7,7 +7,7 @@ This package should be imported into your UI testing target, not your app target
 * Under "Targets", tap your app's UI testing target.
 * Tap Build Phases.
 * Unfold the "Link Binary With Libraries" section.
-* Use the plus icon to add both `MockMarks` and `MockMarks+XCUI` to the list.
+* Use the plus icon to add both `MockMarks` and `MockMarksXCUI` to the list.
 * Ensure they are both assigned the 'Required' status.
 
 In your own test classes that subclass `MockMarksUITestCase`, there's just one thing to do:
